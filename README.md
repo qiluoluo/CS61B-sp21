@@ -3,12 +3,12 @@
 记录所有我在CS61B Spring 2021中的homeworks, labs以及projects。
 ## 进度
 #### Homeworks
-- [ ] hw0
+- [x] hw0
 - [ ] hw1
 - [ ] hw2
 - [ ] hw3
 #### Labs
-- [ ] lab1
+- [x] lab1
 - [ ] lab2setup
 - [ ] lab3
 - [ ] lab4
@@ -17,7 +17,7 @@
 - [ ] lab7
 - [ ] lab8
 #### Projects
-- [ ] proj0
+- [x] proj0
 - [ ] proj1
 - [ ] proj1ec
 - [ ] proj2
