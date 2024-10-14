@@ -9,7 +9,8 @@
 - [ ] hw3
 #### Labs
 - [x] lab1
-- [ ] lab2setup
+- [x] lab2setup
+- [x] lab2
 - [ ] lab3
 - [ ] lab4
 - [ ] lab5
@@ -24,6 +25,25 @@
 - [ ] proj3
 ## Homeworks
 ## Labs
+
+#### Lab2 setup
+
+又是糟心的环境配置。
+
+执行 `git submodule update --init` 下载Library。
+
+下载完Library后，maven无法解析那些jar包，因为我们的maven仓库没有设置为`javalib`。
+
+在 `File` > `Settings` > `Build……`  > `Maven` 中按照如下图设置。
+
+![image-20241014225818828](README.assets/image-20241014225818828.png)
+
+这样`pom.xml`就可以正常解析jar包了。
+
+#### lab2 JUnit Tests and Debugging
+
+题目都比较简单，就不再赘述了。
+
 ## Projects
 
 #### Project 0: 2048
