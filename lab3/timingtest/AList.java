@@ -20,7 +20,7 @@ public class AList<Item> {
 
     /** Creates an empty list. */
     public AList() {
-        items = (Item[]) new Object[100];
+        items = (Item[]) new Object[10000000];
         size = 0;
     }
 
@@ -33,8 +33,14 @@ public class AList<Item> {
 
     /** Inserts X into the back of the list. */
     public void addLast(Item x) {
+//        if (size == items.length) {
+//            resize(size + 1);
+//        }
+//
+//        items[size] = x;
+//        size = size + 1;
         if (size == items.length) {
-            resize(size + 1);
+            resize((int) (size * 1.01));
         }
 
         items[size] = x;

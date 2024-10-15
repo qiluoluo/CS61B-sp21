@@ -40,9 +40,21 @@
 
 这样`pom.xml`就可以正常解析jar包了。
 
-#### lab2 JUnit Tests and Debugging
+#### Lab2 JUnit Tests and Debugging
 
 题目都比较简单，就不再赘述了。
+
+#### Lab3 Timing Tests and Randomized Comparison Tests
+
+一个十分实用对报错进行Debug的技巧。
+
+在 `Run` > `View Breakpoints` 有可以断点到某个报错类型，例如我们要断点到数组边界报错，则可以
+
+```java
+this instanceof java.lang.ArrayIndexOutOfBoundsException
+```
+
+![image-20241015234307093](README.assets/image-20241015234307093.png)
 
 ## Projects
 
