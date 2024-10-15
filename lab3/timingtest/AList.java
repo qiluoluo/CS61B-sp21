@@ -20,7 +20,7 @@ public class AList<Item> {
 
     /** Creates an empty list. */
     public AList() {
-        items = (Item[]) new Object[10000000];
+        items = (Item[]) new Object[100];
         size = 0;
     }
 
