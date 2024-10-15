@@ -25,17 +25,17 @@ public class TimeSLList {
         AList<Integer> Ns = new AList<>();
         AList<Double> times = new AList<>();
         AList<Integer> opCounts = new AList<>();
-        Integer[] NsArray = {1000, 2000, 4000, 8000, 16000, 32000};
+        Integer[] NsArray = {1000, 2000, 4000, 8000, 16000};
         for (Integer integer : NsArray) {
             Ns.addLast(integer);
             SLList<Integer> testList = new SLList<>();
             for (int j = 0; j < integer; j++) {
-                testList.addLast(j);
+                testList.addLast(1);
             }
             opCounts.addLast(10000);
             Stopwatch sw = new Stopwatch();
             for (int i = 0; i < 10000; i++) {
-                testList.addLast(i);
+                testList.addLast(1);
             }
             double timeInSeconds = sw.elapsedTime();
             times.addLast(timeInSeconds);

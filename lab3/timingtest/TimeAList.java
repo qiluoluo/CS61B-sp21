@@ -25,14 +25,14 @@ public class TimeAList {
         AList<Integer> Ns = new AList<>();
         AList<Double> times = new AList<>();
         AList<Integer> opCounts = new AList<>();
-        Integer[] NsArray = {1000, 2000, 4000, 8000, 16000, 32000, 64000, 128000};
+        Integer[] NsArray = {1000, 2000, 4000, 8000, 16000, 32000};
         for (Integer integer : NsArray) {
             Ns.addLast(integer);
             opCounts.addLast(integer);
             AList<Integer> testList = new AList<>();
             Stopwatch sw = new Stopwatch();
             for (int j = 0; j < integer; j++) {
-                testList.addLast(j);
+                testList.addLast(1);
             }
             double timeInSeconds = sw.elapsedTime();
             times.addLast(timeInSeconds);
