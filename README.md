@@ -11,7 +11,7 @@
 - [x] lab1
 - [x] lab2setup
 - [x] lab2
-- [ ] lab3
+- [x] lab3
 - [ ] lab4
 - [ ] lab5
 - [ ] lab6
@@ -381,5 +381,7 @@ this instanceof java.lang.ArrayIndexOutOfBoundsException
       }
   ```
 
+  #### Project 1 Data Structures
   
+  Through the Fire and Flames还是很好听的，哈哈。
 

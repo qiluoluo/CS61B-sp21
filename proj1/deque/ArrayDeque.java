@@ -132,4 +132,28 @@ public class ArrayDeque<T> implements Deque<T>, Iterable<T>{
             return items[curNextFirst];
         }
     }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null) {
+            return false;
+        }
+        if (o == this) {
+            return true;
+        }
+        if (!(o instanceof ArrayDeque)) {
+            return false;
+        }
+        ArrayDeque<?> toEquals = (ArrayDeque<?>) o;
+        if (toEquals.size() != this.size()) {
+            return false;
+        }
+        for (int i = 0; i < this.size(); i++) {
+            if (toEquals.get(i) != this.get(i)) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
