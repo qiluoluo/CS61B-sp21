@@ -5,12 +5,12 @@ public class Collatz {
 
     /** Buggy implementation of nextNumber! */
     public static int nextNumber(int n) {
-        if (n % 2 == 0) {
-            n = n / 2;
+        if (x % 2 == 0) {
+            x = x / 2;
         } else {
-            n = 3 * n + 1;
+            x = 3 * x + 1;
         }
-        return n;
+        return x;
     }
 
     public static void main(String[] args) {
