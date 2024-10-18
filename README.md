@@ -56,7 +56,70 @@ this instanceof java.lang.ArrayIndexOutOfBoundsException
 
 ![image-20241015234307093](README.assets/image-20241015234307093.png)
 
+#### Lab4 Git and Debugging
 
+##### Git
+
+因为不是参与此课程的学生，所以我们可以手动去更改我们自己github上的远程仓库中`lab1/Collatz.java`的代码为
+
+```java
+    /** Buggy implementation of nextNumber! */
+    public static int nextNumber(int n) {
+        if (n  == 128) {
+            return 1;
+        } else if (n == 5) {
+            return 3 * n + 1;
+        } else {
+            return n * 2;
+        }
+    }
+```
+
+然后再 `git pull origin main` 来制造 `merge conflict`，如下所示，将HEAD部分的代码删除
+
+```java
+<<<<<<< HEAD
+        if (n % 2 == 0) {
+            n = n / 2;
+        } else {
+            n = 3 * n + 1;
+        }
+        return n	;
+    }
+=======
+        if (n  == 128) {
+            return 1;
+        } else if (n == 5) {
+            return 3 * n + 1;
+        } else {
+            return n * 2;
+        }
+>>>>>>> d82d813b7cda6b51e4243758dbbc3fc46640b3fe
+```
+
+ 之后就可以按照步骤去做就可以了。
+
+```bash
+# Solve merge conflict
+git add .\lab1\Collatz.java
+git commit -m "Solve merge conflict."
+git pull origin main
+
+# Back to the correct Collatz.java
+git checkout <Hash of your lab1\'s implement>
+git checkout main
+git checkout <Hash of your lab1\'s implement> -- .\lab1\Collatz.java
+git commit -m "Back to the correct Collatz.java"
+git push origin main
+```
+
+学习了Git的原理后，感觉跟区块链其实十分相似。
+
+##### Debugging
+
+Debug后可以发现传递的Integer类型到了128时，使用`==`判断时就返回false，说明已经不是一个对象了，这里应该使用Integer自己实现的`equals`。
+
+详细的细节可以参考 https://zhuanlan.zhihu.com/p/368421654
 
 ## Projects
 
