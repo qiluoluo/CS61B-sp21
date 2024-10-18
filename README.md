@@ -19,7 +19,7 @@
 - [ ] lab8
 #### Projects
 - [x] proj0
-- [ ] proj1
+- [x] proj1
 - [ ] proj1ec
 - [ ] proj2
 - [ ] proj3
@@ -55,6 +55,8 @@ this instanceof java.lang.ArrayIndexOutOfBoundsException
 ```
 
 ![image-20241015234307093](README.assets/image-20241015234307093.png)
+
+
 
 ## Projects
 
