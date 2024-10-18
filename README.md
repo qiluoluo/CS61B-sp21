@@ -12,7 +12,7 @@
 - [x] lab2setup
 - [x] lab2
 - [x] lab3
-- [ ] lab4
+- [x] lab4
 - [ ] lab5
 - [ ] lab6
 - [ ] lab7
