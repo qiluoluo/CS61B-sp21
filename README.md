@@ -14,7 +14,7 @@
 - [x] lab3
 - [x] lab4
 - [ ] lab5
-- [ ] lab6
+- [x] lab6
 - [ ] lab7
 - [ ] lab8
 #### Projects
@@ -120,6 +120,10 @@ git push origin main
 Debug后可以发现传递的Integer类型到了128时，使用`==`判断时就返回false，说明已经不是一个对象了，这里应该使用Integer自己实现的`equals`。
 
 详细的细节可以参考 https://zhuanlan.zhihu.com/p/368421654
+
+#### Lab 6  Getting Started on Project 2
+
+比较简单，就是文件写入读取的一些操作。
 
 ## Projects
 
